@@ -1,0 +1,295 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    font-family: georgia,serif;
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+}
+
+h5 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+}
+
+A:link {background: none; color: #D9661F; text-decoration: none; cursor: pointer;}
+A:visited {background: none; color: #D9661F; text-decoration: none; cursor: pointer;}
+A:hover {background: none; color: #FDB515; text-decoration: none; cursor: pointer;}
+A:active { background: none; color: #FDB515; background: none; cursor: pointer;}
+
+.global {
+width: 900px;
+height: 100%;
+margin-left: auto;
+margin-right: auto;
+background: white;
+}
+
+
+.image-cropper {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.profile-pic {
+  display: inline;
+  margin: -1 auto;
+  margin-left: -50%; //centers the image
+  height: 100%;
+  width: 100%;
+}
+
+
+.global TD {
+vertical-align: top;
+}
+
+.colleft {
+width: 250px;
+color: inherit;
+font: normal 14px georgia,serif;
+border-right: 1px dotted dimgray;
+}
+
+.colright {
+width: 600px;
+padding: 10px 20px 20px 20px;
+background: transparent;
+color: inherit;
+text-align: justify;
+font: normal 14px georgia,serif;
+}
+
+/*p {*/
+/*font: normal 14px*/
+/*}*/
+
+/*
+ * Global resets
+ *
+ * Update the foundational and global aspects of the page.
+ */
+
+html {
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+}
+
+@media (min-width: 48em) {
+    html {
+        font-size: 16px;
+    }
+}
+@media (min-width: 58em) {
+    html {
+        font-size: 20px;
+    }
+}
+
+
+/*
+ * Sidebar
+ *
+ * Flexible banner for housing site name, intro, and "footer" content. Starts
+ * out above content in mobile and later moves to the side with wider viewports.
+ */
+
+.sidebar {
+    text-align: center;
+    padding: 2rem 1rem;
+    /*color: rgba(255,255,255,.5);*/
+    /*background-color: #202020;*/
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, .5);
+}
+@media (min-width: 48em) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 12rem;
+        text-align: left;
+    }
+}
+
+/* Sidebar links */
+.sidebar a {
+    color: #fff;
+}
+
+/* About section */
+.sidebar-about h1 {
+    color: #fff;
+    margin-top: 0;
+    font-family: "Abril Fatface", serif;
+    font-size: 3.25rem;
+}
+
+/* Sidebar nav */
+.sidebar-nav {
+    margin-bottom: 1rem;
+}
+.sidebar-nav-item {
+    display: block;
+    line-height: 1.75;
+}
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+    text-decoration: underline;
+}
+.sidebar-nav-item.active {
+    font-weight: bold;
+}
+
+.nav-button {
+    background-color: #FF6600; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 0;
+    width: 130px;
+    text-align: center;
+    text-decoration: none;
+    /*display: inline-block;*/
+    font-size: 16px;
+    margin: 4px 10px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    font-family: Arial, Serif;
+}
+
+.nav-button:hover {
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24), 0 5px 5px 0 rgba(0,0,0,0.19);
+}
+
+.news-year {
+    vertical-align: top;
+}
+
+.contact-title {
+    font-weight: bold;
+    padding-right: 0.2em;
+}
+
+.tn-img {
+    max-width: 200;
+    max-height: 128px;
+    /*padding-right: 10px;*/
+}
+
+.title {
+    font-weight: bold;
+}
+
+.me {
+    /*color: #FF6600;*/
+    color: #3B7EA1;
+    font-weight: bold;
+}
+
+.pub a {
+    font-family: Arial, serif;
+    font-weight: bold;
+    /*margin-top: 5px;*/
+    padding: 0 0.2em;
+    border: solid cyan;
+    border-width: thick;
+    border-radius: 5px;
+    background-color: cyan;
+    /*border-style: solid;*/
+    /*border-color: black;*/
+    /*border-width: medium;*/
+}
+
+.link {
+    padding-top: 0.5em;
+}
+
+.journal {
+}
+
+.journal-title {
+    font-style: italic;
+}
+
+.journal-year {
+}
+
+.author {
+
+}
+
+/*.link a:link {color: #FF6600; text-decoration: none; cursor: pointer;}*/
+/*.link a:visited {color: #FF6600; text-decoration: none; cursor: pointer;}*/
+/*.link a:hover {color: #FF6600; text-decoration: none; cursor: pointer;}*/
+/*.link a:active { color: #FF6600; background: none; cursor: pointer;}*/
+
+.btn.outline {
+    background: none;
+    padding: 1px 6px;
+    font-size: medium;
+}
+
+.btn-primary.outline {
+    border: 2px solid #3B7EA1;
+    color: #3B7EA1;
+}
+
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: #33a6cc;
+    border-color: #33a6cc;
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+    border-color: #007299;
+    color: #007299;
+    box-shadow: none;
+}
+
+/* Sticky sidebar
+ *
+ * Add the `sidebar-sticky` class to the sidebar's container to affix it the
+ * contents to the bottom of the sidebar in tablets and up.
+ */
+
+@media (min-width: 48em) {
+    .sidebar-sticky {
+        position: absolute;
+        right:  1rem;
+        bottom: 1rem;
+        left:   1rem;
+    }
+}
+
+
+/* Container
+ *
+ * Align the contents of the site above the proper threshold with some margin-fu
+ * with a 25%-wide `.sidebar`.
+ */
+
+.content {
+    padding-top:    4rem;
+    padding-bottom: 4rem;
+}
+
+@media (min-width: 48em) {
+    .content {
+        margin: auto;
+        max-width: 50rem;
+        margin-left: 14rem;
+        margin-right: 2rem;
+    }
+}
+
+@media (min-width: 64em) {
+    .content {
+        margin-left: 16rem;
+        margin-right: 4rem;
+    }
+}
